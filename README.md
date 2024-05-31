@@ -68,10 +68,10 @@ Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
 
 | Nombre del Componente | Descripción | Enlace |
 |-----------------------|-------------|--------|
-| AddProduct            | Formulario para añadir nuevos productos. | [AddProduct.tsx](geizeldos/src/components/AddProduct.tsx) |
-| ProductCatalog        | Muestra una lista de productos. | [ProductCatalog.tsx](geizeldos/src/components/ProductCatalog.tsx) |
-| api                   | Contiene las funciones para realizar solicitudes HTTP al servidor. | [api.ts](geizeldos/src/services/api.ts) |
-| App                   | Configuración de las rutas de la aplicación. | [App.tsx](geizeldos/src/App.tsx) |
-| index                 | Punto de entrada principal de la aplicación. | [index.tsx](geizeldos/src/index.tsx) |
-| main                  | Archivo principal de inicio de la aplicación. | [main.tsx](geizeldos/src/main.tsx) |
-| App.css               | Estilos globales de la aplicación. | [App.css](geizeldos/src/App.css) |
+| AddProduct            | Formulario para añadir nuevos productos. | [AddProduct.tsx](src/components/AddProduct.tsx) |
+| ProductCatalog        | Muestra una lista de productos. | [ProductCatalog.tsx](src/components/ProductCatalog.tsx) |
+| api                   | Contiene las funciones para realizar solicitudes HTTP al servidor. | [api.ts](src/services/api.ts) |
+| App                   | Configuración de las rutas de la aplicación. | [App.tsx](src/App.tsx) |
+| index                 | Punto de entrada principal de la aplicación. | [index.tsx](src/index.tsx) |
+| main                  | Archivo principal de inicio de la aplicación. | [main.tsx](src/main.tsx) |
+| App.css               | Estilos globales de la aplicación. | [App.css](src/App.css) |
