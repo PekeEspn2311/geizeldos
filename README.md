@@ -51,10 +51,10 @@ Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
 
 1. Clona el repositorio:
    bash
-   git clone <https://github.com/Iglesias0714/AWM-Proyecto-Final-EmpathyShop>
+   git clone <https://github.com/PekeEspn2311/geizeldos?authuser=0>
 2. Navega al directorio del proyecto:
    bash
-   cd EmpathyShop
+   cd geizeldos
 3. Instala las dependencias:
    bash
    npm install
