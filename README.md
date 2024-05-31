@@ -1,30 +1,81 @@
-# React + TypeScript + Vite
+Geizeldos es una aplicación web desarrollada con React, TypeScript y Vite. La aplicación permite a los usuarios ver una lista de carros con sus Nombre, imagen, Modelo, Marca, Kilometraje y descripciones, así como añadir productos. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Tecnologías Utilizadas
 
-Currently, two official plugins are available:
+- React
+- TypeScript
+- Vite
+- React Router
+- Adroid Studio
+- Visual Studio Code
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Estructura del Proyecto
 
-## Expanding the ESLint configuration
+El proyecto tiene la siguiente estructura de directorios:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+geizeldos/
+│
+├── backend/
+│   ├── node_modules/
+│   ├── .env
+│   ├── package.json
+│   ├── index.js
+│   ├── models/
+│   │   └── Product.js
+│   ├── routes/
+│   │   └── productRoutes.js
+│   └── controllers/
+│       └── productController.js
+│
+├── frontend/
+│   ├── node_modules/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── AddProduct.tsx
+│   │   │   ├── ProductCatalog.tsx
+│   │   ├── services/
+│   │   │   └── api.ts
+│   │   ├── App.tsx
+│   │   ├── index.tsx
+│   │   ├── main.tsx
+│   │   ├── App.css
+│   ├── package.json
+│   ├── tsconfig.json
+│   ├── vite.config.ts
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Instalación
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
+
+1. Clona el repositorio:
+   bash
+   git clone <https://github.com/Iglesias0714/AWM-Proyecto-Final-EmpathyShop>
+2. Navega al directorio del proyecto:
+   bash
+   cd EmpathyShop
+3. Instala las dependencias:
+   bash
+   npm install
+4. Inicia el servidor de desarrollo:
+   bash
+   npm run dev
+5. Servidor o Backend de la aplicación
+   [Backend-EmpathyShop](https://github.com/Iglesias0714/Backend-EmpathyShop)
+   
+## Configuración de componentes
+
+| Nombre del Componente | Descripción | Enlace |
+|-----------------------|-------------|--------|
+| AddProduct            | Formulario para añadir nuevos productos. | [AddProduct.tsx](frontend/src/components/AddProduct.tsx) |
+| ProductCatalog        | Muestra una lista de productos. | [ProductCatalog.tsx](frontend/src/components/ProductCatalog.tsx) |
+| api                   | Contiene las funciones para realizar solicitudes HTTP al servidor. | [api.ts](frontend/src/services/api.ts) |
+| App                   | Configuración de las rutas de la aplicación. | [App.tsx](frontend/src/App.tsx) |
+| index                 | Punto de entrada principal de la aplicación. | [index.tsx](frontend/src/index.tsx) |
+| main                  | Archivo principal de inicio de la aplicación. | [main.tsx](frontend/src/main.tsx) |
+| App.css               | Estilos globales de la aplicación. | [App.css](frontend/src/App.css) |
+| index.js              | Archivo principal del servidor backend. | [index.js](backend/index.js) |
+| Product               | Modelo de datos para los productos. | [Product.js](backend/models/Product.js) |
+| productRoutes         | Define las rutas de la API para productos. | [productRoutes.js](backend/routes/productRoutes.js) |
+| productController     | Controladores para la lógica de productos. | [productController.js](backend/controllers/productController.js) |
